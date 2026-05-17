@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact &amp; Appointment - Dr. Ayesha Sharma</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts: Inter & Playfair Display -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-family: 'Material Symbols Outlined';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            -webkit-font-feature-settings: 'liga';
+            -webkit-font-smoothing: antialiased;
+        }
+    </style>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface-variant": "#44474d",
+                    "secondary-fixed": "#ffdea5",
+                    "tertiary": "#000000",
+                    "on-background": "#111c2c",
+                    "outline": "#75777e",
+                    "tertiary-container": "#191c1d",
+                    "surface-container-highest": "#d8e3fa",
+                    "secondary": "#775a19",
+                    "tertiary-fixed": "#e1e3e4",
+                    "on-primary-fixed-variant": "#39475f",
+                    "surface-container-low": "#f0f3ff",
+                    "error": "#ba1a1a",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-fixed": "#191c1d",
+                    "on-error-container": "#93000a",
+                    "surface-dim": "#cfdaf1",
+                    "on-secondary-fixed": "#261900",
+                    "primary-fixed": "#d6e3ff",
+                    "primary-container": "#0d1c32",
+                    "surface-bright": "#f9f9ff",
+                    "background": "#f9f9ff",
+                    "on-surface": "#111c2c",
+                    "surface-container": "#e7eeff",
+                    "inverse-on-surface": "#ebf1ff",
+                    "on-tertiary-container": "#828485",
+                    "on-primary-container": "#76849f",
+                    "on-primary-fixed": "#0d1c32",
+                    "on-secondary": "#ffffff",
+                    "inverse-primary": "#b9c7e4",
+                    "secondary-fixed-dim": "#e9c176",
+                    "on-tertiary-fixed-variant": "#454748",
+                    "secondary-container": "#fed488",
+                    "surface-container-high": "#dee8ff",
+                    "surface-variant": "#d8e3fa",
+                    "inverse-surface": "#263142",
+                    "primary-fixed-dim": "#b9c7e4",
+                    "error-container": "#ffdad6",
+                    "tertiary-fixed-dim": "#c5c7c8",
+                    "primary": "#000000",
+                    "surface": "#f9f9ff",
+                    "on-error": "#ffffff",
+                    "outline-variant": "#c5c6cd",
+                    "surface-tint": "#515f78",
+                    "on-secondary-fixed-variant": "#5d4201",
+                    "on-secondary-container": "#785a1a",
+                    "on-primary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-mobile": "20px",
+                    "gutter": "24px",
+                    "unit": "8px",
+                    "margin-desktop": "64px",
+                    "container-max": "1200px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Inter"],
+                    "caption": ["Inter"],
+                    "body-md": ["Inter"],
+                    "headline-sm": ["Playfair Display"],
+                    "display-lg": ["Playfair Display"],
+                    "headline-md": ["Playfair Display"],
+                    "label-md": ["Inter"],
+                    "display-lg-mobile": ["Playfair Display"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "caption": ["12px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "display-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}]
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased selection:bg-secondary selection:text-on-secondary">
+<!-- TopNavBar Shared Component -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface-container/80 backdrop-blur-xl shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<!-- Brand -->
+<a class="text-headline-sm font-headline-sm text-primary dark:text-primary-fixed tracking-tight hover:opacity-80 transition-opacity duration-300" href="#">
+                Dr. Ayesha Sharma
+            </a>
+<!-- Desktop Navigation -->
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface hover:text-secondary dark:hover:text-secondary-fixed transition-colors hover:opacity-80 duration-300" href="#">About</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface hover:text-secondary dark:hover:text-secondary-fixed transition-colors hover:opacity-80 duration-300" href="#">Achievements</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface hover:text-secondary dark:hover:text-secondary-fixed transition-colors hover:opacity-80 duration-300" href="#">Research</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface hover:text-secondary dark:hover:text-secondary-fixed transition-colors hover:opacity-80 duration-300" href="#">Clinics</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface hover:text-secondary dark:hover:text-secondary-fixed transition-colors hover:opacity-80 duration-300" href="#">Reviews</a>
+<!-- Active Item -->
+<a class="font-label-md text-label-md text-secondary dark:text-secondary-fixed-dim border-b-2 border-secondary dark:border-secondary-fixed-dim pb-1 hover:opacity-80 transition-opacity duration-300" href="#">Contact</a>
+</nav>
+<!-- Trailing Action -->
+<button class="hidden md:flex items-center justify-center bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded hover:opacity-80 transition-opacity duration-300 active:scale-95 transition-transform">
+                Book Appointment
+            </button>
+<!-- Mobile Menu Toggle (Visual Only) -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<!-- Main Canvas -->
+<main class="pt-32 pb-24 md:pt-40 md:pb-32 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto min-h-screen">
+<!-- Page Header -->
+<div class="mb-12 md:mb-16">
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-primary mb-4">
+                Schedule a Consultation
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                Request an appointment at one of our premium clinical locations. Our team will coordinate with you to confirm the schedule.
+            </p>
+</div>
+<!-- Split Layout Container -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-gutter md:gap-12">
+<!-- Left Side: Booking Form (7 Columns) -->
+<div class="md:col-span-7">
+<div class="bg-surface-container-lowest rounded-xl p-6 md:p-10 shadow-[0px_4px_20px_rgba(10,25,47,0.05)] h-full border border-surface-container-high/50">
+<form class="flex flex-col gap-8">
+<!-- Personal Details Row -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface-variant" for="name">Full Name</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:border-secondary focus:ring-0 px-0 py-2 font-body-md text-body-md text-on-surface placeholder:text-outline transition-colors" id="name" placeholder="e.g. Jane Doe" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface-variant" for="phone">Phone Number</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:border-secondary focus:ring-0 px-0 py-2 font-body-md text-body-md text-on-surface placeholder:text-outline transition-colors" id="phone" placeholder="+1 (555) 000-0000" type="tel"/>
+</div>
+</div>
+<!-- Email -->
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface-variant" for="email">Email Address</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:border-secondary focus:ring-0 px-0 py-2 font-body-md text-body-md text-on-surface placeholder:text-outline transition-colors" id="email" placeholder="jane@example.com" type="email"/>
+</div>
+<!-- Clinic & Date Row -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface-variant" for="clinic">Preferred Clinic</label>
+<div class="relative">
+<select class="w-full bg-transparent border-0 border-b border-outline-variant focus:border-secondary focus:ring-0 px-0 py-2 font-body-md text-body-md text-on-surface appearance-none transition-colors" id="clinic">
+<option disabled="" selected="" value="">Select Location</option>
+<option value="downtown">Downtown Heart Institute</option>
+<option value="westside">Westside Medical Pavilion</option>
+</select>
+<span class="material-symbols-outlined absolute right-0 top-1/2 -translate-y-1/2 text-outline pointer-events-none">expand_more</span>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface-variant" for="date">Preferred Date</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:border-secondary focus:ring-0 px-0 py-2 font-body-md text-body-md text-on-surface transition-colors" id="date" type="date"/>
+</div>
+</div>
+<!-- Reason -->
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface-variant" for="reason">Reason for Visit</label>
+<textarea class="w-full bg-transparent border-0 border-b border-outline-variant focus:border-secondary focus:ring-0 px-0 py-2 font-body-md text-body-md text-on-surface placeholder:text-outline resize-none transition-colors" id="reason" placeholder="Briefly describe your symptoms or referral details..." rows="4"></textarea>
+</div>
+<!-- Submit -->
+<div class="pt-4">
+<button class="w-full md:w-auto bg-primary text-on-primary font-label-md text-label-md px-8 py-4 rounded hover:opacity-90 transition-opacity duration-300 flex items-center justify-center gap-2" type="button">
+                                Request Appointment
+                                <span class="material-symbols-outlined" style="font-size: 18px;">arrow_forward</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+<!-- Right Side: Contact Details, Map & Socials Bento Grid (5 Columns) -->
+<div class="md:col-span-5 flex flex-col gap-6">
+<!-- Direct Contact Card -->
+<div class="bg-surface-container-lowest rounded-xl p-8 shadow-[0px_4px_20px_rgba(10,25,47,0.05)] border border-surface-container-high/50 flex flex-col gap-6">
+<h3 class="font-headline-sm text-headline-sm text-primary">Get in Touch</h3>
+<div class="flex flex-col gap-4">
+<a class="flex items-start gap-4 group" href="#">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary group-hover:bg-secondary group-hover:text-on-secondary transition-colors duration-300">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">call</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant">Clinic Reception</span>
+<span class="font-body-md text-body-md text-primary">+1 (800) 123-4567</span>
+</div>
+</a>
+<a class="flex items-start gap-4 group" href="#">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary group-hover:bg-secondary group-hover:text-on-secondary transition-colors duration-300">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">mail</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant">General Inquiries</span>
+<span class="font-body-md text-body-md text-primary">care@drsharma.com</span>
+</div>
+</a>
+</div>
+<!-- WhatsApp Button -->
+<div class="pt-4 mt-2 border-t border-outline-variant/30">
+<button class="w-full border border-secondary text-secondary font-label-md text-label-md px-6 py-3 rounded hover:bg-secondary hover:text-on-secondary transition-colors duration-300 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">chat</span>
+                            Message on WhatsApp
+                        </button>
+</div>
+</div>
+<!-- Location / Map Card -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0px_4px_20px_rgba(10,25,47,0.05)] border border-surface-container-high/50 flex flex-col">
+<div class="h-48 w-full relative bg-surface-variant">
+<!-- Abstract Map Image via CSS background to ensure proper data-alt placement on a div acting as an image container, though standard img is better. Using standard img for accessibility and prompt extraction. -->
+<img alt="Clinic Location" class="w-full h-full object-cover" data-alt="A high-resolution, stylized digital map of a metropolitan area, rendered in a sophisticated light-mode aesthetic. The map uses a restrained color palette of pale silver, soft whites, and subtle warm gray tones, avoiding bright primary colors to maintain a premium corporate feel. Key arterial routes are delicately highlighted, and a minimalist, elegant deep navy pin marker indicates a central clinical location. The lighting is soft and ambient, casting a very faint, clean shadow that gives the map a subtle 3D layered appearance." data-location="Metropolitan Area" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtutOsj4zCRXmL6VaK1LdPJdvK_Yi8j4IUP1Rw7R9Bo-TdZciplVKevu46YjR6FOgCg_rRUDFG2ZMNPxILCo3cq0eoDk2kVL323AIsE6Dsrkhj2VEcEsP-otnNEWqUDju3XXbLsCwMwj6QNivhDgN5mY2YtbwNHAxO_gJ9FVehJ-7SCvNK1s-5erFCoI8C4p60xbvUUEztFfosH65FpkEVUVmPOPn9wOzKNWWNda8-IHSOrAierVRBDfiUZbdBTCWN0UmTRR620SU"/>
+</div>
+<div class="p-6 flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary mt-1" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<div class="flex flex-col gap-1">
+<span class="font-label-md text-label-md text-primary">Downtown Heart Institute</span>
+<span class="font-body-md text-body-md text-on-surface-variant text-sm">
+                                1200 Medical Center Drive, Suite 400<br/>
+                                Metropolis, NY 10001
+                            </span>
+</div>
+</div>
+</div>
+<!-- Social Links Card -->
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-[0px_4px_20px_rgba(10,25,47,0.05)] border border-surface-container-high/50 flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary">Connect Professionally</span>
+<div class="flex gap-4">
+<a class="flex items-center gap-2 text-on-surface-variant hover:text-secondary transition-colors duration-200" href="#">
+<span class="font-label-md text-label-md">LinkedIn</span>
+<span class="material-symbols-outlined" style="font-size: 20px;">open_in_new</span>
+</a>
+<div class="w-px h-4 bg-outline-variant/50 my-auto"></div>
+<a class="flex items-center gap-2 text-on-surface-variant hover:text-error transition-colors duration-200" href="#">
+<span class="font-label-md text-label-md">YouTube</span>
+<span class="material-symbols-outlined" style="font-size: 20px;">play_circle</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Shared Component -->
+<footer class="w-full py-12 md:py-20 bg-surface-container-high dark:bg-tertiary-container text-on-surface dark:text-on-tertiary-fixed">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<!-- Brand Column -->
+<div class="flex flex-col gap-4 col-span-1 md:col-span-2">
+<span class="font-headline-sm text-headline-sm text-primary dark:text-primary-fixed">
+                    Dr. Ayesha Sharma
+                </span>
+<p class="font-caption text-caption text-on-surface-variant dark:text-on-tertiary-container max-w-sm mt-2">
+                    © 2024 Dr. Ayesha Sharma. All rights reserved. Senior Cardiologist.
+                </p>
+</div>
+<!-- Links Column -->
+<div class="flex flex-col gap-3">
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary transition-colors duration-200" href="#">Privacy Policy</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary transition-colors duration-200" href="#">Terms of Service</a>
+</div>
+<!-- More Links Column -->
+<div class="flex flex-col gap-3">
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary transition-colors duration-200" href="#">Patient Portal</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary transition-colors duration-200" href="#">Newsletter Signup</a>
+</div>
+</div>
+</footer>
+</body></html>

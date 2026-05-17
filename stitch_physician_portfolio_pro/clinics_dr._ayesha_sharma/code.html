@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Clinics &amp; Affiliations - Dr. Ayesha Sharma</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface-variant": "#44474d",
+                        "secondary-fixed": "#ffdea5",
+                        "tertiary": "#000000",
+                        "on-background": "#111c2c",
+                        "outline": "#75777e",
+                        "tertiary-container": "#191c1d",
+                        "surface-container-highest": "#d8e3fa",
+                        "secondary": "#775a19",
+                        "tertiary-fixed": "#e1e3e4",
+                        "on-primary-fixed-variant": "#39475f",
+                        "surface-container-low": "#f0f3ff",
+                        "error": "#ba1a1a",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-fixed": "#191c1d",
+                        "on-error-container": "#93000a",
+                        "surface-dim": "#cfdaf1",
+                        "on-secondary-fixed": "#261900",
+                        "primary-fixed": "#d6e3ff",
+                        "primary-container": "#0d1c32",
+                        "surface-bright": "#f9f9ff",
+                        "background": "#f9f9ff",
+                        "on-surface": "#111c2c",
+                        "surface-container": "#e7eeff",
+                        "inverse-on-surface": "#ebf1ff",
+                        "on-tertiary-container": "#828485",
+                        "on-primary-container": "#76849f",
+                        "on-primary-fixed": "#0d1c32",
+                        "on-secondary": "#ffffff",
+                        "inverse-primary": "#b9c7e4",
+                        "secondary-fixed-dim": "#e9c176",
+                        "on-tertiary-fixed-variant": "#454748",
+                        "secondary-container": "#fed488",
+                        "surface-container-high": "#dee8ff",
+                        "surface-variant": "#d8e3fa",
+                        "inverse-surface": "#263142",
+                        "primary-fixed-dim": "#b9c7e4",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed-dim": "#c5c7c8",
+                        "primary": "#000000",
+                        "surface": "#f9f9ff",
+                        "on-error": "#ffffff",
+                        "outline-variant": "#c5c6cd",
+                        "surface-tint": "#515f78",
+                        "on-secondary-fixed-variant": "#5d4201",
+                        "on-secondary-container": "#785a1a",
+                        "on-primary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "gutter": "24px",
+                        "unit": "8px",
+                        "margin-desktop": "64px",
+                        "container-max": "1200px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter"],
+                        "caption": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-sm": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"],
+                        "label-md": ["Inter"],
+                        "display-lg-mobile": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "caption": ["12px", { "lineHeight": "1.4", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-sm": ["24px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "label-md": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "display-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "700" }]
+                    },
+                    "boxShadow": {
+                        "ambient": "0px 4px 20px rgba(10, 25, 47, 0.05)"
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface-container/80 backdrop-blur-xl shadow-sm dark:shadow-none transition-all duration-300">
+<div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<!-- Brand -->
+<a class="text-headline-sm font-headline-sm text-primary dark:text-primary-fixed tracking-tight hover:opacity-80 transition-opacity duration-300" href="#">
+                Dr. Ayesha Sharma
+            </a>
+<!-- Navigation Links (Desktop) -->
+<ul class="hidden md:flex items-center gap-8">
+<li>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface hover:text-secondary dark:hover:text-secondary-fixed transition-colors hover:opacity-80 duration-300" href="#">About</a>
+</li>
+<li>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface hover:text-secondary dark:hover:text-secondary-fixed transition-colors hover:opacity-80 duration-300" href="#">Achievements</a>
+</li>
+<li>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface hover:text-secondary dark:hover:text-secondary-fixed transition-colors hover:opacity-80 duration-300" href="#">Research</a>
+</li>
+<li>
+<!-- Active State -->
+<a class="font-label-md text-label-md text-secondary dark:text-secondary-fixed-dim border-b-2 border-secondary dark:border-secondary-fixed-dim pb-1 hover:opacity-80 transition-opacity duration-300 scale-95 transition-transform inline-block" href="#">Clinics</a>
+</li>
+<li>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface hover:text-secondary dark:hover:text-secondary-fixed transition-colors hover:opacity-80 duration-300" href="#">Reviews</a>
+</li>
+<li>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface hover:text-secondary dark:hover:text-secondary-fixed transition-colors hover:opacity-80 duration-300" href="#">Contact</a>
+</li>
+</ul>
+<!-- Trailing Action -->
+<div class="flex items-center">
+<button class="bg-primary text-on-primary font-label-md text-label-md py-2.5 px-6 rounded-DEFAULT hover:bg-primary/90 transition-colors shadow-sm hidden md:block">
+                    Book Appointment
+                </button>
+<!-- Mobile Menu Icon (Placeholder) -->
+<button class="md:hidden text-primary p-2">
+<span class="material-symbols-outlined text-[24px]">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow pt-32 pb-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
+<!-- Header -->
+<header class="mb-16 md:w-2/3">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-4">Clinics &amp; Affiliations</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                Dr. Sharma consults at premier medical facilities across the city, providing comprehensive cardiology care. Select a location below to view hours and arrange your consultation.
+            </p>
+</header>
+<!-- Layout Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- Cards Column -->
+<div class="lg:col-span-5 flex flex-col gap-6 order-2 lg:order-1">
+<!-- Clinic Card 1 -->
+<article class="bg-surface-container-lowest p-8 rounded-xl shadow-ambient border border-surface-container transition-all hover:-translate-y-1 hover:shadow-lg duration-300 relative overflow-hidden group">
+<div class="absolute top-0 left-0 w-1 h-full bg-secondary scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300"></div>
+<h2 class="font-headline-sm text-headline-sm text-primary mb-2">HeartCare Premier Clinic</h2>
+<p class="font-label-md text-label-md text-secondary mb-6">Private Practice</p>
+<div class="space-y-4 mb-8">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-outline text-[20px] mt-0.5" style="font-variation-settings: 'FILL' 0;">location_on</span>
+<span class="font-body-md text-body-md text-on-surface-variant">45 South Extension Avenue, Block C<br/>New Delhi, 110049</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-outline text-[20px]" style="font-variation-settings: 'FILL' 0;">schedule</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Mon, Wed, Fri • 9:00 AM - 1:00 PM</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-outline text-[20px]" style="font-variation-settings: 'FILL' 0;">call</span>
+<span class="font-body-md text-body-md text-on-surface-variant">+91 11 4567 8900</span>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 mt-auto">
+<button class="flex-1 bg-primary text-on-primary font-label-md text-label-md py-3 px-4 rounded-DEFAULT hover:bg-primary/90 transition-colors text-center">
+                            Book at this Location
+                        </button>
+<button class="flex-1 border border-outline text-primary font-label-md text-label-md py-3 px-4 rounded-DEFAULT hover:bg-surface-variant transition-colors text-center flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">directions</span> Get Directions
+                        </button>
+</div>
+</article>
+<!-- Clinic Card 2 -->
+<article class="bg-surface-container-lowest p-8 rounded-xl shadow-ambient border border-surface-container transition-all hover:-translate-y-1 hover:shadow-lg duration-300 relative overflow-hidden group">
+<div class="absolute top-0 left-0 w-1 h-full bg-secondary scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300"></div>
+<h2 class="font-headline-sm text-headline-sm text-primary mb-2">Apollo Indraprastha Hospital</h2>
+<p class="font-label-md text-label-md text-on-primary-container mb-6">Senior Consultant Affiliation</p>
+<div class="space-y-4 mb-8">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-outline text-[20px] mt-0.5" style="font-variation-settings: 'FILL' 0;">location_on</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Sarita Vihar, Mathura Road<br/>New Delhi, 110076</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-outline text-[20px]" style="font-variation-settings: 'FILL' 0;">schedule</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Tue, Thu • 10:00 AM - 4:00 PM</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-outline text-[20px]" style="font-variation-settings: 'FILL' 0;">call</span>
+<span class="font-body-md text-body-md text-on-surface-variant">+91 11 2692 5858</span>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 mt-auto">
+<button class="flex-1 bg-primary text-on-primary font-label-md text-label-md py-3 px-4 rounded-DEFAULT hover:bg-primary/90 transition-colors text-center">
+                            Book at this Location
+                        </button>
+<button class="flex-1 border border-outline text-primary font-label-md text-label-md py-3 px-4 rounded-DEFAULT hover:bg-surface-variant transition-colors text-center flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">directions</span> Get Directions
+                        </button>
+</div>
+</article>
+<!-- Clinic Card 3 -->
+<article class="bg-surface-container-lowest p-8 rounded-xl shadow-ambient border border-surface-container transition-all hover:-translate-y-1 hover:shadow-lg duration-300 relative overflow-hidden group">
+<div class="absolute top-0 left-0 w-1 h-full bg-secondary scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300"></div>
+<h2 class="font-headline-sm text-headline-sm text-primary mb-2">Max Super Speciality</h2>
+<p class="font-label-md text-label-md text-on-primary-container mb-6">Visiting Faculty &amp; Surgeon</p>
+<div class="space-y-4 mb-8">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-outline text-[20px] mt-0.5" style="font-variation-settings: 'FILL' 0;">location_on</span>
+<span class="font-body-md text-body-md text-on-surface-variant">1, 2, Press Enclave Road, Saket<br/>New Delhi, 110017</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-outline text-[20px]" style="font-variation-settings: 'FILL' 0;">schedule</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Saturdays • 9:00 AM - 2:00 PM</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-outline text-[20px]" style="font-variation-settings: 'FILL' 0;">call</span>
+<span class="font-body-md text-body-md text-on-surface-variant">+91 11 2651 5050</span>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 mt-auto">
+<button class="flex-1 bg-primary text-on-primary font-label-md text-label-md py-3 px-4 rounded-DEFAULT hover:bg-primary/90 transition-colors text-center">
+                            Book at this Location
+                        </button>
+<button class="flex-1 border border-outline text-primary font-label-md text-label-md py-3 px-4 rounded-DEFAULT hover:bg-surface-variant transition-colors text-center flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">directions</span> Get Directions
+                        </button>
+</div>
+</article>
+</div>
+<!-- Map Column (Sticky on Desktop) -->
+<div class="lg:col-span-7 h-[400px] lg:h-[calc(100vh-200px)] lg:sticky lg:top-28 rounded-xl overflow-hidden shadow-ambient border border-surface-container order-1 lg:order-2 bg-surface-variant relative group">
+<!-- Simulated Map Embed via Image -->
+<img alt="Map showing clinic locations" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500" data-alt="A sophisticated, high-end digital map interface centered on a metropolitan area, viewed top-down. The map utilizes a minimalist, modern light-mode color palette featuring soft greys, crisp pristine whites, and subtle deep navy blue accents indicating major arterial roads. Three elegant, minimalist gold map marker pins indicate premium clinical locations across the city. The overall aesthetic is clean, highly professional, and reflects a luxury medical concierge service with soft, ambient lighting." data-location="New Delhi, India" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_Vt3t3dj2dSH7FhT-NxVAhN-5I3VD0Ai84KjHE6dBJ5dMyZa7-saSX4P5ba6tVDt3C56DHCYQw_SfbyInHPHTCo7btjsqRfEbOOyMvafg_7KnY5prAIu2Ny4xAS7bR0HwTzkYvkhKZufHmAC9s-9mFo0FfNptffh8LdTnWCvZraC_OjQ-84fh4hVpA5lKuVkalV-5Rh3f90jpdE6pWG6C12zrcUe8ya_4KNGzoJZPTJz9nrE3gzo93q9L_JlZWQa5eKlPc5uAKS0"/>
+<!-- Map Overlay Gradient for depth -->
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/20 to-transparent pointer-events-none"></div>
+<!-- Floating Map Action (Optional polish) -->
+<div class="absolute bottom-6 right-6 flex flex-col gap-2 pointer-events-none">
+<button class="w-10 h-10 bg-surface-container-lowest rounded-full shadow-md flex items-center justify-center pointer-events-auto hover:bg-surface transition-colors border border-outline-variant">
+<span class="material-symbols-outlined text-primary text-[20px]">add</span>
+</button>
+<button class="w-10 h-10 bg-surface-container-lowest rounded-full shadow-md flex items-center justify-center pointer-events-auto hover:bg-surface transition-colors border border-outline-variant">
+<span class="material-symbols-outlined text-primary text-[20px]">remove</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 md:py-20 bg-surface-container-high dark:bg-tertiary-container mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<!-- Brand & Copyright -->
+<div class="col-span-1 md:col-span-2 flex flex-col gap-4">
+<span class="font-headline-sm text-headline-sm text-primary dark:text-primary-fixed">
+                    Dr. Ayesha Sharma
+                </span>
+<p class="font-caption text-caption text-on-surface dark:text-on-tertiary-fixed max-w-sm">
+                    © 2024 Dr. Ayesha Sharma. All rights reserved. Senior Cardiologist.
+                </p>
+</div>
+<!-- Links -->
+<div class="col-span-1 md:col-span-2 flex flex-wrap gap-x-8 gap-y-4 md:justify-end">
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary transition-colors duration-200" href="#">
+                    Privacy Policy
+                </a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary transition-colors duration-200" href="#">
+                    Terms of Service
+                </a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary transition-colors duration-200" href="#">
+                    Patient Portal
+                </a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary transition-colors duration-200" href="#">
+                    Newsletter Signup
+                </a>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Patient Reviews &amp; Testimonials - Dr. Ayesha Sharma</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface-variant": "#44474d",
+                    "secondary-fixed": "#ffdea5",
+                    "tertiary": "#000000",
+                    "on-background": "#111c2c",
+                    "outline": "#75777e",
+                    "tertiary-container": "#191c1d",
+                    "surface-container-highest": "#d8e3fa",
+                    "secondary": "#775a19",
+                    "tertiary-fixed": "#e1e3e4",
+                    "on-primary-fixed-variant": "#39475f",
+                    "surface-container-low": "#f0f3ff",
+                    "error": "#ba1a1a",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-fixed": "#191c1d",
+                    "on-error-container": "#93000a",
+                    "surface-dim": "#cfdaf1",
+                    "on-secondary-fixed": "#261900",
+                    "primary-fixed": "#d6e3ff",
+                    "primary-container": "#0d1c32",
+                    "surface-bright": "#f9f9ff",
+                    "background": "#f9f9ff",
+                    "on-surface": "#111c2c",
+                    "surface-container": "#e7eeff",
+                    "inverse-on-surface": "#ebf1ff",
+                    "on-tertiary-container": "#828485",
+                    "on-primary-container": "#76849f",
+                    "on-primary-fixed": "#0d1c32",
+                    "on-secondary": "#ffffff",
+                    "inverse-primary": "#b9c7e4",
+                    "secondary-fixed-dim": "#e9c176",
+                    "on-tertiary-fixed-variant": "#454748",
+                    "secondary-container": "#fed488",
+                    "surface-container-high": "#dee8ff",
+                    "surface-variant": "#d8e3fa",
+                    "inverse-surface": "#263142",
+                    "primary-fixed-dim": "#b9c7e4",
+                    "error-container": "#ffdad6",
+                    "tertiary-fixed-dim": "#c5c7c8",
+                    "primary": "#000000",
+                    "surface": "#f9f9ff",
+                    "on-error": "#ffffff",
+                    "outline-variant": "#c5c6cd",
+                    "surface-tint": "#515f78",
+                    "on-secondary-fixed-variant": "#5d4201",
+                    "on-secondary-container": "#785a1a",
+                    "on-primary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-mobile": "20px",
+                    "gutter": "24px",
+                    "unit": "8px",
+                    "margin-desktop": "64px",
+                    "container-max": "1200px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Inter"],
+                    "caption": ["Inter"],
+                    "body-md": ["Inter"],
+                    "headline-sm": ["Playfair Display"],
+                    "display-lg": ["Playfair Display"],
+                    "headline-md": ["Playfair Display"],
+                    "label-md": ["Inter"],
+                    "display-lg-mobile": ["Playfair Display"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "caption": ["12px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "display-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .ambient-shadow {
+            box-shadow: 0px 4px 20px rgba(10, 25, 47, 0.05);
+        }
+        .masonry-grid {
+            column-count: 1;
+            column-gap: 24px;
+        }
+        @media (min-width: 768px) {
+            .masonry-grid { column-count: 2; }
+        }
+        @media (min-width: 1024px) {
+            .masonry-grid { column-count: 3; }
+        }
+        .masonry-item {
+            break-inside: avoid;
+            margin-bottom: 24px;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md min-h-screen flex flex-col pt-20">
+<!-- TopNavBar -->
+<nav class="bg-surface/80 dark:bg-surface-container/80 backdrop-blur-xl shadow-sm dark:shadow-none fixed top-0 w-full z-50">
+<div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<a class="text-headline-sm font-headline-sm text-primary dark:text-primary-fixed tracking-tight hover:opacity-80 transition-opacity duration-300" href="#">Dr. Ayesha Sharma</a>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-on-surface-variant dark:text-on-surface hover:text-secondary dark:hover:text-secondary-fixed transition-colors font-label-md text-label-md hover:opacity-80 duration-300" href="#">About</a>
+<a class="text-on-surface-variant dark:text-on-surface hover:text-secondary dark:hover:text-secondary-fixed transition-colors font-label-md text-label-md hover:opacity-80 duration-300" href="#">Achievements</a>
+<a class="text-on-surface-variant dark:text-on-surface hover:text-secondary dark:hover:text-secondary-fixed transition-colors font-label-md text-label-md hover:opacity-80 duration-300" href="#">Research</a>
+<a class="text-on-surface-variant dark:text-on-surface hover:text-secondary dark:hover:text-secondary-fixed transition-colors font-label-md text-label-md hover:opacity-80 duration-300" href="#">Clinics</a>
+<a class="text-secondary dark:text-secondary-fixed-dim border-b-2 border-secondary dark:border-secondary-fixed-dim pb-1 font-label-md text-label-md hover:opacity-80 transition-opacity duration-300" href="#">Reviews</a>
+<a class="text-on-surface-variant dark:text-on-surface hover:text-secondary dark:hover:text-secondary-fixed transition-colors font-label-md text-label-md hover:opacity-80 duration-300" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary font-label-md text-label-md py-2 px-4 rounded hover:opacity-80 transition-opacity duration-300 hidden md:block">
+                Book Appointment
+            </button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+</button>
+</div>
+</nav>
+<main class="flex-grow">
+<!-- Hero Summary Section -->
+<section class="py-[80px] md:py-[120px] px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-6">Patient Stories</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">Hear from our patients about their experiences and journeys toward better heart health under the care of Dr. Sharma.</p>
+<div class="inline-flex items-center justify-center space-x-4 bg-surface-container-lowest ambient-shadow rounded-full py-4 px-8 border border-surface-variant">
+<div class="flex items-center space-x-1 text-secondary">
+<span class="material-symbols-outlined text-headline-md" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-headline-md" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-headline-md" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-headline-md" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-headline-md" style="font-variation-settings: 'FILL' 1;">star_half</span>
+</div>
+<div class="h-8 w-px bg-outline-variant"></div>
+<div class="text-left">
+<div class="font-headline-sm text-headline-sm text-primary">4.9 / 5</div>
+<div class="font-caption text-caption text-on-surface-variant">Based on 2,400+ reviews</div>
+</div>
+</div>
+</div>
+<!-- Masonry Grid -->
+<div class="masonry-grid">
+<!-- Testimonial Card 1 -->
+<div class="masonry-item bg-surface-container-lowest rounded-xl p-8 ambient-shadow border border-surface-variant">
+<div class="flex text-secondary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mb-6">"Dr. Sharma's approach to my complex condition was both reassuring and highly professional. She explained every detail of the procedure in a way that put me at ease. The recovery has been incredible, and I owe my renewed health to her expertise."</p>
+<div class="flex items-center space-x-4">
+<div class="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center text-primary font-headline-sm text-headline-sm">RJ</div>
+<div>
+<div class="font-label-md text-label-md text-primary">Robert Jenkins</div>
+<div class="font-caption text-caption text-on-surface-variant">Coronary Artery Bypass</div>
+</div>
+</div>
+</div>
+<!-- Testimonial Card 2 -->
+<div class="masonry-item bg-surface-container-lowest rounded-xl p-8 ambient-shadow border border-surface-variant">
+<div class="flex text-secondary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mb-6">"Finding a specialist who genuinely listens is rare. Dr. Sharma took the time to understand my symptoms before suggesting a treatment plan. Her minimalist clinic setup reflects her focused and precise medical style. Highly recommended for anyone needing serious cardiac care."</p>
+<div class="flex items-center space-x-4">
+<div class="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center text-primary font-headline-sm text-headline-sm">EM</div>
+<div>
+<div class="font-label-md text-label-md text-primary">Elena Martinez</div>
+<div class="font-caption text-caption text-on-surface-variant">Arrhythmia Management</div>
+</div>
+</div>
+</div>
+<!-- Testimonial Card 3 -->
+<div class="masonry-item bg-surface-container-lowest rounded-xl p-8 ambient-shadow border border-surface-variant">
+<div class="flex text-secondary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mb-6">"Exceptional care from start to finish. The clinic environment is incredibly serene, making stressful visits much easier to handle."</p>
+<div class="flex items-center space-x-4">
+<div class="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center text-primary font-headline-sm text-headline-sm">SW</div>
+<div>
+<div class="font-label-md text-label-md text-primary">Samuel Wong</div>
+<div class="font-caption text-caption text-on-surface-variant">Preventative Consultation</div>
+</div>
+</div>
+</div>
+<!-- Testimonial Card 4 -->
+<div class="masonry-item bg-surface-container-lowest rounded-xl p-8 ambient-shadow border border-surface-variant">
+<div class="flex text-secondary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mb-6">"After years of struggling with unexplained fatigue and palpitations, Dr. Sharma finally provided a clear diagnosis. Her empathetic nature and academic rigor give you total confidence in her care. I feel like I have my life back."</p>
+<div class="flex items-center space-x-4">
+<div class="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center text-primary font-headline-sm text-headline-sm">LT</div>
+<div>
+<div class="font-label-md text-label-md text-primary">Laura Thompson</div>
+<div class="font-caption text-caption text-on-surface-variant">Heart Failure Management</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Submit Review Section -->
+<section class="py-[80px] md:py-[120px] bg-surface-container-low">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="font-headline-md text-headline-md text-primary mb-6">Share Your Experience</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">Your feedback helps us continuously improve the standard of care we provide and helps future patients feel confident in choosing our clinic.</p>
+<div class="w-full h-64 md:h-80 rounded-xl overflow-hidden ambient-shadow">
+<img alt="Clinical setting" class="w-full h-full object-cover" data-alt="A modern, high-end private medical clinic waiting area. Soft, warm natural light filters through large windows, highlighting minimalist furniture and a calm, quiet atmosphere. The palette features pristine whites, deep navy accents, and subtle warm tones. The mood is serene, professional, and empathetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1Nv3DttFuPtNvSQxHvgWHMBF989QelUMnTCj9LBAyqyfqtiUFKt6UpWL8UxkNQoS3Jif0oFeIOOkQV4tCSqhseB4U7y8a0kDzcydFYSyFjdCuUVVr8LjAUtpHLTuIwrjB-TBXsMCUUwpNWfQTqXTiRSmYRnnhKUPsVD8IEKwh1eXb1RJCk1QeWB3kPXHLc2bSLBOtzyFTuKKGv8Du31HgqNK4LPbLPPlSYzNPekMWD9BHw59x7tEDw3MEG-QOFnDwIJPl3ZiUE_c"/>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-8 md:p-12 ambient-shadow">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-6">Submit Your Review</h3>
+<form class="space-y-6">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-2" for="name">Full Name</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:border-secondary focus:ring-0 px-0 py-2 font-body-md text-body-md text-on-surface placeholder-on-surface-variant" id="name" name="name" placeholder="Jane Doe" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-2" for="email">Email Address</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:border-secondary focus:ring-0 px-0 py-2 font-body-md text-body-md text-on-surface placeholder-on-surface-variant" id="email" name="email" placeholder="jane@example.com" type="email"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-2">Rating</label>
+<div class="flex space-x-2 text-outline-variant cursor-pointer">
+<span class="material-symbols-outlined hover:text-secondary transition-colors" style="font-variation-settings: 'FILL' 0;">star</span>
+<span class="material-symbols-outlined hover:text-secondary transition-colors" style="font-variation-settings: 'FILL' 0;">star</span>
+<span class="material-symbols-outlined hover:text-secondary transition-colors" style="font-variation-settings: 'FILL' 0;">star</span>
+<span class="material-symbols-outlined hover:text-secondary transition-colors" style="font-variation-settings: 'FILL' 0;">star</span>
+<span class="material-symbols-outlined hover:text-secondary transition-colors" style="font-variation-settings: 'FILL' 0;">star</span>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-2" for="message">Your Message</label>
+<textarea class="w-full bg-transparent border-0 border-b border-outline-variant focus:border-secondary focus:ring-0 px-0 py-2 font-body-md text-body-md text-on-surface placeholder-on-surface-variant resize-none" id="message" name="message" placeholder="Tell us about your experience..." rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary font-label-md text-label-md py-4 rounded hover:opacity-80 transition-opacity duration-300 mt-4" type="submit">
+                                Submit Feedback
+                            </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-high dark:bg-tertiary-container w-full py-12 md:py-20 flat no shadows">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-1">
+<span class="font-headline-sm text-headline-sm text-primary dark:text-primary-fixed block mb-4">Dr. Ayesha Sharma</span>
+<p class="font-caption text-caption text-on-surface dark:text-on-tertiary-fixed">© 2024 Dr. Ayesha Sharma. All rights reserved. Senior Cardiologist.</p>
+</div>
+<div class="col-span-1 md:col-span-3 flex flex-col md:flex-row justify-end items-start md:items-center space-y-4 md:space-y-0 md:space-x-8">
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary transition-colors duration-200" href="#">Privacy Policy</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary transition-colors duration-200" href="#">Terms of Service</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary transition-colors duration-200" href="#">Patient Portal</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary transition-colors duration-200" href="#">Newsletter Signup</a>
+</div>
+</div>
+</footer>
+</body></html>
